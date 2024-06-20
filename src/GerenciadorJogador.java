@@ -5,10 +5,30 @@ public class GerenciadorJogador {
     private static ArrayList<Jogador > listaJogadores = new ArrayList<>();
 
 
-    public static void adicionarJogador (Jogador jogador){
+    public static void salvarJogador (Jogador jogador){
         listaJogadores.add(jogador);
-        //tratamento de execeção para caso nao haja o clube onde jogador atua
-        
+    }
+
+    public static ArrayList<Jogador > getListaJogadores (){
+        return listaJogadores;
+    }
+
+    public static void verificarListaVaziaJogador () throws Exception{
+        if(listaJogadores.isEmpty()){
+            throw new Exception ("\nATENÇÃO:Não ha jogadores na liga!");
+        }
+    }
+
+    public static Jogador buscarJogador (String nomeJogador) throws Exception{
+        for (Jogador tempJogador : listaJogadores){
+            if (tempJogador.getNomeJogador().equals(nomeJogador));
+            return tempJogador;
+        }
+        throw new Exception ("\nATENÇÃO:Não há nenhum jogador com o nome " + nomeJogador + " cadatrado:");
+    }
+
+    public static void excluirJogador (Jogador jogador){
+        listaJogadores.remove(jogador);
     }
 
     
