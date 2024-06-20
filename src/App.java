@@ -1,8 +1,12 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Jogador joga = new Jogador("Eliedson", "Coritiba", "23/06/2003", "5000", "3", 1234);
-        System.out.println(joga.exibirDados());
+        Clube clube = new Clube("Coritiba", "Brasileiro", "1980");
+
+        Jogador jogador = new Jogador("Eliedson", "Meia", "23/06/2003" , "3 anos", clube);
+
+        System.out.println(jogador.toString());
     }
 
     
 }
+
