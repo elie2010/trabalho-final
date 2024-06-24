@@ -24,7 +24,7 @@ public class GerenciadorJogador {
             if (tempJogador.getNomeJogador().equals(nomeJogador));
             return tempJogador;
         }
-        throw new Exception ("\nATENÇÃO:Não há nenhum jogador com o nome " + nomeJogador + " cadatrado:");
+        throw new Exception ("\nATENÇÃO:Jogador com o nome " + nomeJogador + " não encontrado:");
     }
 
     public static void excluirJogador (Jogador jogador){

@@ -9,12 +9,10 @@ public class Clube extends Liga {
         this.nomeClube = nomeClube;
     }
 
-    public Clube(String nomeClube, String nomeLiga) {
+    public Clube (String nomeClube, String nomeLiga) {
         super(nomeLiga);
         this.nomeClube = nomeClube;
     }
-
-    
     
     public String getNomeClube() {
         return nomeClube;

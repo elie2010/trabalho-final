@@ -14,15 +14,12 @@ public class Console {
                 break; 
             
             } catch (InputMismatchException e) {
-                // senão, a exceção é capturada:
                 System.out.println("O valor informado não é um inteiro.");
-            
             } finally { 
 
                 scanner.nextLine();
             }
         }
-        // retorna o valor lido:
         return valor;
     }
 
